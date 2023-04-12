@@ -1,0 +1,201 @@
+:root {
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+
+    --clr-verydark-blue: hsl(234, 12%, 34%);
+    --clr-grayish-blue: hsl(229, 6%, 66%);
+    --clr-verylight-gray: hsl(0, 0%, 98%);
+    --clr-verylight-gray1: hsl(0, 10%, 88%);
+
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+
+    --fs-small: 15px;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*generel styling*/
+body {
+    background-color: var(--clr-verylight-gray);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-small);
+    place-content: center;
+    margin: auto 2rem;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: var(--fw-light);
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.sub-heading {
+    font-size: 22px;
+    font-weight: var(--fw-semi-bold);
+    text-align: center;
+    color: var(--clr-verydark-blue);
+    margin: auto;
+}
+
+.main-para {
+    text-align: center;
+    font-size: 15px;
+    color: var(--clr-grayish-blue);
+    margin-top: .8rem;
+}
+
+.convey-box {
+    background-color: white;
+    margin: 1.5rem auto;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: .7rem;
+    border-radius: 6px;
+    box-shadow: 0px 13px 12px lightgrey;
+    max-width: 20rem;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-verydark-blue);
+}
+
+.duty {
+    font-size: 13px;
+    font-weight: var(--fw-regular);
+    color: var(--clr-grayish-blue);
+    margin: auto;
+    margin-top: 5px;
+    line-height: 1.4rem;
+}
+
+img {
+    display: flex;
+    align-items: bottom;
+    justify-content: right;
+    width: 50px;
+    height: 50px;
+    margin: 1rem auto;
+    margin-right: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.cyan{
+    border-top: 4px solid var(--clr-cyan);
+    margin-top:5rem ;
+}
+.red{
+    border-top: 4px solid var(--clr-red);
+}
+.orange{
+    border-top: 4px solid var(--clr-orange);
+}
+.blue{
+    border-top: 4px solid var(--clr-blue);
+    margin-bottom: 4rem;
+}
+
+@media (min-width:75em){
+    .flexgroup{
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .cyan{
+        max-height: 14rem;
+        margin-top: 8rem;
+        margin-right:2rem;
+    }
+    .blue{
+        max-height: 14rem;
+        margin-top: 10rem;
+        margin-left:2rem;
+    }
+    .heading{
+        margin: auto;
+    }
+    .sub-heading{
+        margin-top:;
+    }
+    .main-para{
+        text-align: center;
+    }
+}
+
